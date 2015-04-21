@@ -1,5 +1,5 @@
 require 'active_support'
-I18n.enforce_available_locales = false
+defined? I18n.enforce_available_locales = false
 I18n.load_path << File.join(File.dirname(__FILE__), 'config', 'locales', 'en.yml')
 
 module MongoidOrderable
